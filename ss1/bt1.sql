@@ -1,0 +1,12 @@
+CREATE DATABASE student_bt;
+USE student_bt;
+create table class(
+ID int PRIMARY KEY,
+STUDENTNAME  varchar(45)
+);
+CREATE TABLE TEACHER(
+ID INT PRIMARY KEY,
+TEACHERNAME VARCHAR(45),
+Age DATE,
+Country VARCHAR(45)
+);
