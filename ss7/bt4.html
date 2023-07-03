@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      height: 1500px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+    }
+    header {
+      background-color:lightgrey;
+      grid-column-start:1;
+      grid-column-end:13;
+      grid-row-start: 0;
+      grid-row-end: 2;
+      margin-bottom: 3px;
+      height: 110px;
+    }
+    nav {
+      grid-column-start:1;
+      grid-column-end:13;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: flex;
+      justify-content: center;
+      background-color: lightgrey;
+      height: 60px;
+    }
+    section {
+      grid-template-columns: 1fr 3fr;
+    }
+    footer {
+      grid-column-start:1;
+      grid-column-end:13;
+      grid-row-start: 12;
+      grid-row-end: 13;
+      background-color: #999999;
+      color: black;
+      display: inline;
+      text-align: center;
+      padding: 20px;
+    }
+    #menu li{
+      position: relative;
+      float: left;
+      list-style: none;
+      text-decoration: none;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    #content1 {
+      grid-column-start:1;
+      grid-column-end:5;
+      grid-row-start: 3;
+      grid-row-end: 12;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="favicon.ico">
+  </header>
+  <nav>
+    <div>
+      <ul id="menu">
+        <li><a href="#">Phim hoạt hình</a></li>
+        <li><a href="#">Phim hoạt hình yêu thích</a></li>
+        <li><a href="#">Nhân vật hoạt hình</a></li>
+        <li><a href="#">Góp ý</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section></section>
+  <footer>
+    <div>
+      <span>@ 2017 - Thiết kế web bởi trang hoathinhvn.net</span>
+    </div>
+  </footer>
+</body>
+</html>

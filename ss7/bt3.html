@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      height: 1500px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+    }
+    header {
+      background-color:black;
+      grid-column-start:1;
+      grid-column-end:13;
+      grid-row-start: 0;
+      grid-row-end: 1;
+    }
+    button {
+      position: relative;
+      float: left;
+      left: 100px;
+      width: 100px;
+      height: 50px;
+      margin-bottom: 15px;
+      background-color: black;
+      color: #CDCDCD;
+    }
+    #menu1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 13;
+      background-color: beige;
+      line-height: 30px;
+      text-align: center;
+    }
+    #menu2 {
+      grid-column-start: 10;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 13;
+      background-color: beige;
+    }
+    #content {
+      grid-column-start: 3;
+      grid-column-end: 10;
+      grid-row-start: 2;
+      grid-row-end: 12;
+      background-color: white;
+    }
+    #footer {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 12;
+      grid-row-end: 13;
+      background-color: #555555;
+      text-align: center;
+      font-size: large;
+      color: white;
+    }
+    #logo {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+    }
+    i {
+      position: absolute;
+      right: 150px;
+      top: 20px;
+      color: #555555;
+    }
+    #login {
+      position: relative;
+      left: 905px;
+      top: 5px;
+      border: black;
+    }
+    #link {
+      list-style: none;
+    }
+    .ads {
+      position: relative;
+      top: 200px;
+      background-color: beige;
+      color: black;
+      text-align: center;
+      display: block;
+      margin: 10px;
+    }
+
+  </style>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+  <div>
+    <img src="favicon.ico" id="logo">
+  </div>
+  <div>
+    <button>Home</button>
+    <button>About</button>
+    <button>Project</button>
+    <button>Contact</button>
+  </div>
+  <div>
+    <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>fa-2x
+    <button id="login">Login</button>
+  </div>
+</header>
+<nav id="menu1">
+  <div >
+    <ul id="link">
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="menu2">
+  <div>
+    <button class="ads">ADS</button>
+    <button class="ads">ADS</button>
+  </div>
+</nav>
+<section id="content">
+  <div>
+    <div>
+      <h2>MY BUTTON</h2>
+      <article >
+        Tạo một class CSS như myButton. Thêm thuộc tính sau vào class CSS “ myButton ". Đặt bán kính đường viền sang 50%. Xác định cùng một giá trị cho các thuộc tính chiều cao và rộng. Thiết lập thuộc tính đường viền, màu nền, màu sắc và căn lề.
+      </article>
+    </div>
+    <div>
+      <h2>NAVIGATION</h2>
+      <article>
+        Thanh điều hướng hay thanh navbar nằm trong GUI, giúp khách ghé thăm web xem được thông tin trên trang của bạn. Nó là thành phần UI trên trang web, bao gồm link cho các phần khác của web.
+
+        Thanh điều hướng chủ yếu nằm ở phần đầu của trang dưới dạng danh sách link theo chiều ngang. Nó có thể được đặt bên dưới logo hoặc header, thế nhưng nó sẽ luôn được đặt trước nội dung chính của trang web.
+
+        Điều quan trọng với một website là phải có hệ thống điều hướng dễ dùng. Nó đóng vai trò quan trọng trong web vì cho du khách ghé thăm mọi phần thật nhanh.
+
+        Bạn có rất nhiều cách làm navbar bằng CSS. Dưới đây là hướng dẫn chi tiết cách tạo các thanh navbar bằng CSS.
+      </article>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <p>Footer text</p>
+</footer>
+</body>
+</html>

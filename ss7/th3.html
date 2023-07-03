@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      font-family: Arial;
+    }
+
+    #menu{
+      height: 30px;
+      padding:0;
+      margin:0;
+      background-color: #000000;
+      border: 1px solid #CDCDCD;
+    }
+
+    #menu ul, #menu li{
+      padding:0;
+      margin:0;
+    }
+
+    #menu li{
+      position: relative;
+      float: left;
+      list-style: none;
+      margin: 0;
+      padding:0;
+
+    }
+
+    #menu li a{
+      width:300px;
+      height: 30px;
+      display: block;
+      text-decoration:none;
+      text-align: center;
+      line-height: 30px;
+      background-color: black;
+      color: white;
+    }
+
+    #menu ul ul li a{
+      width: 350px;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    #menu li a:hover{
+      background-color: red;
+    }
+
+    #menu ul ul{
+      position: absolute;
+      top: 30px;
+      left: 15px;
+      visibility: hidden;
+    }
+
+    #menu ul li:hover ul{
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+<div id = "menu">
+  <ul>
+    <li><a href = "#">Điều dưỡng cơ bản</a>
+      <ul>
+        <li><a href = "#">Thay băng vết mổ khô</a></li>
+        <li><a href = "#">TIêm bắp thuốc ống</a></li>
+        <li><a href = "#">Đặt ống thông tiểu giữ lại</a></li>
+        <li><a href = "#">Đặt ống thông dạ dày</a></li>
+        <li><a href = "#">Hút đờm nhớt</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Chăm sóc sức khỏe Nội khoa 1</a>
+      <ul>
+        <li><a href="#">Chăm sóc người bệnh tăng huyết áp</a></li>
+        <li><a href="#">Chăm sóc người bệnh viêm cơ tim</a></li>
+        <li><a href="#">Chăm sóc người bệnh nhồi máu cơ tim</a></li>
+        <li><a href="#">Chăm sóc người bệnh viêm loét dạ dày - tá tràng</a></li>
+        <li><a href="#">Chăm sóc người bệnh viêm loét thực quản</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Chăm sóc sức khỏe Ngoại khoa 1</a>
+      <ul>
+        <li><a href="#">Chăm sóc người bệnh gãy xương</a></li>
+        <li><a href="#">Chăm sóc người bệnh viêm xương</a></li>
+        <li><a href="#">Chăm sóc người bệnh viêm ruột thừa</a></li>
+        <li><a href="#">Chăm sóc người bệnh sỏi túi mật</a></li>
+        <li><a href="#">Chăm sóc người bệnh hậu phẫu đường tiêu hóa</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
